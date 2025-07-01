@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppMemo from './AppMemo';
+import AppCourse from './AppCourse';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AppMemo />
+    <AppCourse />
   </React.StrictMode>,
 );

@@ -7,9 +7,11 @@ export default function Counter({ onTotal }) {
   const [counter, setCounter] = useState(0);
 
   const handleCounter = () => {
-    setCounter(prevCounter => prevCounter + 1);
-    setCounter(prevCounter => prevCounter + 1);
-    setCounter(prevCounter => prevCounter + 1);
+    setCounter(prevCounter => prevCounter + 1); //0+1
+    setCounter(prevCounter => prevCounter + 1); //1+1
+    setCounter(prevCounter => prevCounter + 1); //2+1
+    //콜백함수로 로직을 보내면 그 반환값을 받을 수 있고, 그것을 통해 누적으로 계산할 수 있다.
+    //결론적으로 하나의 로직에서 set 함수로 값을 여러번 변경하고자 하면 콜백함수를 넘기면 된다.
     if (onTotal) {
       onTotal();
     }

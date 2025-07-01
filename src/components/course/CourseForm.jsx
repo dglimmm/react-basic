@@ -1,4 +1,4 @@
-import { useImmer } from 'use-immer';
+import { useImmer } from 'use-immer'; //깊은 복사를 위한 라이브러리
 import Card from '../Card';
 
 export default function CourseForm() {
