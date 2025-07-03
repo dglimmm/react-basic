@@ -32,6 +32,8 @@ function Form() {
     });
   };
 
+  //submit눌렀는데 값이 비어있다면 그쪽으로 포커스 가기위함
+  //dom 요소 참조
   const titleInputRef = useRef(null);
   const authorInputRef = useRef(null);
   const contentTextareaRef = useRef(null);

@@ -1,6 +1,7 @@
+import { memo } from 'react';
 import { useTodosDispatch } from '../../context/TodoContext';
 
-export default function TodoItem({ item }) {
+export default memo(function TodoItem({ item }) {
   const dispatch = useTodosDispatch();
 
   const handleDeleteTodo = deleteId => {
@@ -28,4 +29,4 @@ export default function TodoItem({ item }) {
       <button onClick={() => handleDeleteTodo(item.id)}>X</button>
     </label>
   );
-}
+});

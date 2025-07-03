@@ -12,6 +12,7 @@ function Courses() {
         setList(data);
       });
     //소켓등 사용시에는 꼭 연결해제 해줘야함
+    //클린업 함수
     return () => {
       console.log('연결 해제@');
     };
